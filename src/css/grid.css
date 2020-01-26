@@ -1,0 +1,111 @@
+.grid{
+    position: relative;
+    padding: 0px;
+    margin:0px;
+    display:grid;
+    height: 100%;
+    width: 100%;
+
+}
+
+#gameContainer{
+    display:grid;
+    grid-template-columns: 4% 70% 4%;
+    grid-template-rows: 10% 7.5% 70% 7.5%;
+}
+
+#hud{
+    grid-row:1;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    display:grid;
+    grid-template-columns: 50% 25% 25%;
+
+}
+
+#hud-left{
+    grid-row:1;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hud-middle{
+    grid-row:1;
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hud-right{
+    grid-row:1;
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#topWall{
+    grid-row:2;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    background: linear-gradient(0deg, #748FCF 0%,#B9D6F5 100%);
+}
+
+#bottomWall{
+    grid-row:4;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+.wallEnd{
+    height:30%;
+    background-color:#D6EAFF;
+}
+
+#trapezoid {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, #748FCF 0%,#B9D6F5 100%);
+    transform: perspective(10px) rotateX(1deg);
+  }
+
+.wallSideBottom{
+    height:70%;
+    background: linear-gradient(180deg, #748FCF 0%,#B9D6F5 100%);
+}
+
+.wallSideTop{
+    height:70%;
+    background: linear-gradient(0deg, #748FCF 0%,#B9D6F5 100%);
+}
+
+#center{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#leftWall{
+    grid-column:1;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    background-color:#D6EAFF;
+    z-index:100;
+    /*background: linear-gradient(270deg, #748FCF 0%,#B9D6F5 100%);*/
+}
+
+#rightWall{
+    grid-column:3;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    z-index:100;
+    background-color:#D6EAFF;
+    /*background: linear-gradient(90deg, #748FCF 0%,#B9D6F5 100%);*/
+}
+
+

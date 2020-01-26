@@ -1,0 +1,12 @@
+
+.snakecontainer{
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+.snakesegment{
+    position:absolute;
+    box-shadow: 0px 5px 0px #51906A;
+    background-color: #6ECA92;
+}

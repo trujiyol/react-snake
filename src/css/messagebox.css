@@ -1,0 +1,68 @@
+.messagebox{
+    background-color:#4B65A1;
+    border-radius: 5%;
+    height: 40%;
+    width: 70%;
+    top: 30%;
+    left:15%;
+    color: white;
+    font-family:arial;
+    box-shadow: 0px 10px 0px rgba(0,0,0,0.3);
+    display:flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    animation: floating 2s infinite;
+    
+}
+
+.container{
+    z-index:100;
+    position: absolute;
+    height:100%;
+    width:100%;
+    
+}
+
+.container.hidden{
+    animation: disappear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.container.seen{
+    animation: appear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes disappear{
+    0% {
+        transform: scaleX(1) scaleY(1);
+      }
+    100% {
+        transform: scaleX(0) scaleY(0);
+      }
+}
+
+@keyframes appear{
+    0% {
+        transform: scaleX(0) scaleY(0);
+      }
+    100% {
+        transform: scaleX(1) scaleY(1);
+      }
+}
+
+
+
+@keyframes floating {
+    0% {
+      transform: scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: scaleX(1.1) scaleY(1.1);
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}

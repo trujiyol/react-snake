@@ -1,0 +1,15 @@
+
+.pausebutton{
+    background-color: purple;
+    border-radius: 20px;
+    width:45%;
+    height: 30px;
+    font-family: arial;
+    color:white;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}

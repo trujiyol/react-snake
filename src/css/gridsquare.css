@@ -1,0 +1,12 @@
+.gridsquare{
+    position:relative;
+    margin:0px;
+}
+
+.gridsquare.colorA{
+    background-color: #748FCF;
+}
+
+.gridsquare.colorB{
+    background-color: #A3CEFA;
+}
